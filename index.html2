@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Safe Learning Publication</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f4f4;
+color:#333;
+transition:0.3s;
+}
+
+header{
+background:linear-gradient(90deg,#4facfe,#00f2fe);
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:white;
+position:sticky;
+top:0;
+}
+
+nav a{
+color:white;
+margin:0 10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+text-decoration:underline;
+}
+
+.hero{
+height:70vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(120deg,#84fab0,#8fd3f4);
+color:#222;
+padding:20px;
+}
+
+.hero h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+section{
+padding:50px 20px;
+max-width:1000px;
+margin:auto;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.quote{
+background:#fff;
+padding:20px;
+border-left:5px solid #4facfe;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+button{
+padding:8px 15px;
+border:none;
+background:#222;
+color:white;
+cursor:pointer;
+border-radius:5px;
+}
+
+.dark{
+background:#121212;
+color:white;
+}
+
+.dark .card{
+background:#1f1f1f;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h2>Safe Learning Publication</h2>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#books">Books</a>
+<a href="#quotes">Quotes</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<button onclick="toggleDark()">Dark Mode</button>
+
+</header>
+
+
+<section class="hero" id="home">
+
+<h1>Welcome to Safe Learning Publication</h1>
+
+<p>Empowering minds with free knowledge.</p>
+
+<p>Author: Pankaj Sahu</p>
+
+</section>
+
+
+<section id="about">
+
+<h2>About</h2>
+
+<p>
+Safe Learning Publication is a free knowledge platform created by
+<b>Pankaj Sahu</b>.
+Our mission is to provide educational resources, motivational thoughts,
+and digital books for students and learners.
+</p>
+
+</section>
+
+
+<section id="books">
+
+<h2>Books</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Science Book</h3>
+<p>Download free science notes.</p>
+<a href="#">Download PDF</a>
+</div>
+
+<div class="card">
+<h3>Biology Notes</h3>
+<p>Useful notes for students.</p>
+<a href="#">Download PDF</a>
+</div>
+
+<div class="card">
+<h3>Motivation Guide</h3>
+<p>Self improvement ebook.</p>
+<a href="#">Download PDF</a>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="quotes">
+
+<h2>Motivational Quotes</h2>
+
+<div class="cards">
+
+<div class="quote">
+Knowledge is the most powerful weapon.
+</div>
+
+<div class="quote">
+Learning today leads to success tomorrow.
+</div>
+
+<div class="quote">
+Education is the key to freedom.
+</div>
+
+</div>
+
+</section>
+
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p>Email: example@email.com</p>
+
+<p>Instagram: @pankajsahu155</p>
+
+</section>
+
+
+<footer>
+
+© Safe Learning Publication | Author: Pankaj Sahu
+
+</footer>
+
+
+<script>
+
+function toggleDark(){
+document.body.classList.toggle("dark");
+}
+
+</script>
+
+</body>
+</html>
